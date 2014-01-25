@@ -55,6 +55,9 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+html2git:
+	$(PELICAN) $(INPUTDIR) -o ./ -s $(CONFFILE) $(PELICANOPTS)
+
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
