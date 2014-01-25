@@ -2,3 +2,4 @@ srv.pid
 #.gitignore
 *.pyc
 *.swp
+pelican-themes/
