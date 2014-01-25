@@ -6,7 +6,7 @@ AUTHOR = u'Parasite'
 SITENAME = u"Parasite's Thoughts"
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Moscow'
 
 DEFAULT_LANG = u'ru'
 
@@ -29,3 +29,6 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+#Enable get date from file:
+DEFAULT_DATE = 'fs'

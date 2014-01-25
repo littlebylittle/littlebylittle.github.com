@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Parasite's Thoughts</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2014-01-25T21:29:45+04:00</updated><entry><title>The first article</title><link href="/the-first-article.html" rel="alternate"></link><updated>2014-01-25T21:29:45+04:00</updated><author><name>Parasite</name></author><id>tag:,2014-01-25:the-first-article.html</id><summary type="html">&lt;p&gt;Моя первая статья. Тестовая. Тут ничего важного нету.&lt;/p&gt;
+&lt;p&gt;* Italic text here *&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum auctor blandit. Duis blandit tristique aliquam. Maecenas viverra dolor et nulla rutrum, in convallis diam feugiat. Ut eleifend elit ut est semper, sed posuere metus interdum. Nullam tellus urna, lobortis non arcu et, malesuada euismod sem. Maecenas cursus purus ut nulla hendrerit pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Donec suscipit dui eu gravida molestie. Praesent sit amet sagittis sem, eget pretium diam. Vivamus interdum et mi suscipit ornare. Quisque varius interdum elit, tincidunt gravida enim mollis vel. Donec faucibus tortor sed dapibus feugiat. Praesent tempus laoreet sapien, vel commodo elit molestie at. Vestibulum elit diam, placerat quis sollicitudin vitae, fermentum sed diam. Etiam dui orci, suscipit tincidunt lobortis ac, vehicula ac neque.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;** Bold text here **&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bold text Nunc mollis rhoncus eros, in bibendum magna convallis quis. Phasellus sem tortor, ultricies quis velit eu, bibendum mattis tellus. Duis sit amet tincidunt leo, quis mollis urna. Ut bibendum justo in erat rutrum rutrum. Nulla mollis odio sit amet auctor rhoncus. Aliquam lorem nisl, cursus at nisl vitae, dapibus auctor mauris. Aliquam a venenatis diam. Suspendisse neque nisl, hendrerit eget erat non, semper interdum mauris. Donec ornare tellus et sodales commodo.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="section" id="lists"&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Первый элемент списка.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Второй элемент с дочерним списком.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Первый элемент дочернего списка.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Второй элемент дочернего списка.&lt;/p&gt;
+&lt;p&gt;Another element&lt;/p&gt;
+&lt;p&gt;Second another element&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;And yet&lt;ol class="lowerroman"&gt;
+&lt;li&gt;Numeric text&lt;/li&gt;
+&lt;li&gt;Second numeric text&lt;/li&gt;
+&lt;li&gt;Wut wut wut&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Третий элемент списка.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h3&gt;Links:&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.google.com"&gt;Гугль&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docutils.sf.net/rst.html"&gt;ReStructuredText&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html"&gt;Cheat-sheet&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="section" id="other"&gt;
+&lt;h4&gt;Other:&lt;/h4&gt;
+&lt;p&gt;External hyperlinks, like &lt;a class="reference external" href="http://www.python.org/"&gt;Python&lt;/a&gt; or &lt;a class="reference external" href="http://www.triton.org/"&gt;Triton&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Footnote references, like &lt;a class="footnote-reference" href="#id3" id="id2"&gt;[5]&lt;/a&gt;.
+Note that footnotes may get
+rearranged, e.g., to the bottom of
+the &amp;quot;page&amp;quot;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A numerical footnote. Note
+there's no colon after the &lt;tt class="docutils literal"&gt;]&lt;/tt&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Hmmmmmmm another text&lt;/p&gt;
+&lt;p&gt;Autonumbered footnotes are
+possible, like using &lt;a class="footnote-reference" href="#id6" id="id4"&gt;[1]&lt;/a&gt; and &lt;a class="footnote-reference" href="#id7" id="id5"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This is the first one.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This is the second one.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;They may be assigned 'autonumber
+labels' - for instance,
+&lt;a class="footnote-reference" href="#fourth" id="id8"&gt;[4]&lt;/a&gt; and &lt;a class="footnote-reference" href="#third" id="id9"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="third" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;a.k.a. &lt;a class="reference internal" href="#third"&gt;third&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="fourth" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id8"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;a.k.a. &lt;a class="reference internal" href="#fourth"&gt;fourth&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id10"&gt;
+&lt;h4&gt;Таблицы рисуются так:&lt;/h4&gt;
+&lt;p&gt;Simple table:&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="31%" /&gt;
+&lt;col width="31%" /&gt;
+&lt;col width="38%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head" colspan="2"&gt;Inputs&lt;/th&gt;
+&lt;th class="head"&gt;Output&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;th class="head"&gt;A&lt;/th&gt;
+&lt;th class="head"&gt;B&lt;/th&gt;
+&lt;th class="head"&gt;A or B&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;False&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;td&gt;True&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id11"&gt;
+&lt;h4&gt;Что за ерунда со строками начинающимися с |&lt;/h4&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;|Раз два три&lt;/div&gt;
+&lt;div class="line"&gt;|Четыре пять&lt;/div&gt;
+&lt;div class="line"&gt;|Ничего не понимаю ... &lt;cite&gt;один&lt;/cite&gt; &lt;strong&gt;два&lt;/strong&gt;&lt;/div&gt;
+&lt;div class="line"&gt;|Эти строки начинаются с символа &amp;quot;|&amp;quot;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Раз два три
+Четыре пять
+Ничего не понимаю ... &lt;cite&gt;один&lt;/cite&gt; &lt;strong&gt;два&lt;/strong&gt;
+Эти строки НЕ начинаются с символа &amp;quot;|&amp;quot;&lt;/p&gt;
+&lt;p&gt;Raw text:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Raw text::
+&amp;lt;empty line&amp;gt;
+*раз* **два**
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="begining"></category><category term="first-post"></category><category term="test"></category></entry></feed>
