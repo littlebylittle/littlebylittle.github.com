@@ -1,4 +1,4 @@
 Repository for my blog;
 =======================
 
-`link to blog <http://littlebylittle.github.com>`_
+`link to blog <http://littlebylittle.github.io>`_
