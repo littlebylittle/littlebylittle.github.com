@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Parasite'
 SITENAME = u"Parasite's Thoughts"
-SITEURL = '/content'
+SITEURL = '/output'
 
 TIMEZONE = 'Europe/Moscow'
 
