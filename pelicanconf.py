@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Parasite'
 SITENAME = u"Parasite's Thoughts"
-SITEURL = ''
+SITEURL = '/content'
 
 TIMEZONE = 'Europe/Moscow'
 
@@ -18,8 +18,11 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),)
+          ('Jinja2', 'http://jinja.pocoo.org/'),
+	  ('Home', '/'), )
 
+#IMG author
+AUTHOR_IMG = 'http://liubavyshka.ru/_ph/36/2/813597786.gif'
 # Social widget
 SOCIAL = (('My github', 'https://github.com/littlebylittle/#'), )
 
