@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Parasite'
 SITENAME = u"Parasite's Thoughts"
 SITEURL = '/output'
+#SITEURL = ''
 
 TIMEZONE = 'Europe/Moscow'
 

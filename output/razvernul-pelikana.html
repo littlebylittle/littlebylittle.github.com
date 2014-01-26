@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Развернул пеликана</title>
+
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Parasite" />
+
+        <!-- Feeds -->
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/output/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="/output/theme/favicon.ico" />
+
+        <!-- Google analytics -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+          <div id="blogtitle">Parasite's Thoughts</div>
+
+          <!-- Blogroll -->
+          <ul id="mainnav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+
+          <div class="clearboth"></div>
+          <div id="content">
+
+<h1>Развернул пеликана</h1>
+<div class=date>Вс. 26 Январь 2014
+ / <span class="tags">
+  <a class="tag" href="/output/tag/begining.html">begining</a>
+  <a class="tag" href="/output/tag/test.html">test</a>
+  <a class="tag" href="/output/tag/issue.html">issue</a>
+  <a class="tag" href="/output/tag/fails.html">fails</a>
+</span>
+</div>
+
+<p>Проводил небольшие изменения в блоге, подключил тему, перенес блог в отдельную директорию, и поставил на нее редирект.
+После чего залил изменения на гитхаб, и ужас - ничего не работает, на главной странице блога вижу 404-ошибку. Подождал 20 минут, ничего не поменялось. Голову сломал, конфиги пересмотрел, даже письмо в службу поддержки отправил, но ответа не дождался, т.к. было очень поздно. В итоге немного подзабил на проблему, начал почту читать. И вижу письмо от гитхаба-бота, что мои изменения в репозитории некорректны:</p>
+<p>Message text:</p>
+<pre class="literal-block">
+The page build failed with the following error:
+The submodule `pelican-themes` was not properly initialized with a `.gitmodules` file.
+For information on troubleshooting Jekyll see:
+https://help.github.com/articles/using-jekyll-with-pages#troubleshooting
+If you have any questions please contact us at https://github.com/contact.
+</pre>
+<p>А все из-за того что я добавил pelican-themes в мой репозиторий. И в директории pelican-themes также есть свой .gitignore, .gitmodules, что обрабатывается некорректно. Я добавил всю директорию `pelican-theme` в .gitignore, теперь блог заливается корректно.</p>
+<div class="section" id="todo">
+<h2>TODO:</h2>
+<p>Думаю как настроить все охуенно, что-бы можно было писать статьи на дев-сервере, и деплоить на гитхаб без проблем. То что все html файлы должны быть по-умолчанию в корне репозитория мне тоже не нравится.</p>
+<p>Также надо как-нибудь настроить сервис комментариев, хотя вопрос стоит в том &quot;нужен ли он мне вообще?&quot;;</p>
+</div>
+
+<div class="author">
+  <a href="">
+    <img src="http://liubavyshka.ru/_ph/36/2/813597786.gif" alt="Parasite" width="128" height="108"/>
+  </a>
+  <div class="infos">
+    <h3>A propos de <a href="">Parasite</a></h3>	
+    <p></p>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class=footer>
+          <div class="textwidget">
+
+
+
+
+
+
+
+
+          </div>
+
+          <p>
+            Carburize with <a href="http://blog.getpelican.com">pelican</a></p>
+          <p><a href="https://github.com/badele/pelican-theme-jesuislibre">jesuislibre</a> theme, inspired by <a href="http://blog.dbrgn.ch">dbrng</a> blog</p>
+          <p><a href="http://bruno.adele.im">about author</a></p>
+      </div>
+
+
+     </body>
+</html>
