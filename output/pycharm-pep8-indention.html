@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Pycharm pep8 indention</title>
+
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Parasite" />
+
+        <!-- Feeds -->
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/output/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="/output/theme/favicon.ico" />
+
+        <!-- Google analytics -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+          <div id="blogtitle">Parasite's Thoughts</div>
+
+          <!-- Blogroll -->
+          <ul id="mainnav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+
+          <div class="clearboth"></div>
+          <div id="content">
+
+<h1>Pycharm pep8 indention</h1>
+<div class=date>Сб. 08 Февраль 2014
+ / <span class="tags">
+  <a class="tag" href="/output/tag/python2.html">python2</a>
+</span>
+</div>
+
+<p>Почему то не замечал что у меня по-умолчанию сейчас в pycharm настроены отступы в виде четырех пробелов.
+Отключил эту опцию, поставив что каждый отступ это один таб.
+В итоге pycharm начал ругаться (подчеркивать) весь мой код с подсказкой &quot;pep8 блахблах лучше используй четыре таба&quot;.
+Ну что за ерунда? Я сколько себя помню всегда использовал в pycharm такой тип отступов-табов, а сейчас ide думает что она умнее меня.
+Похоже что это особенность нового pycharm, либо потому-что такой тупой фичи нету в python3, в котором я до этого обычно писал.
+Но решение я нашел, чему я очень рад:</p>
+<ul class="simple">
+<li>Надо войти в настройки проекта. (ctrl+alt+s)</li>
+<li>Найти пункт Inspections в левой части окна</li>
+<li>Найти пункт Python в правой части окна, раскрыть этот пункт меню.</li>
+<li>Найти подпункт &quot;Pep 8 coding style violation&quot;</li>
+<li>Еще правее, рядом с текстом &quot;Ignore errors&quot; нажать плюсик &quot;+&quot;</li>
+<li>На странице <a class="reference external" href="http://pep8.readthedocs.org/en/latest/intro.html#configuration">http://pep8.readthedocs.org/en/latest/intro.html#configuration</a> найти alert, с кодом, который выдает PyCharm</li>
+<li>Добавить этот код-alert (в моем случае &quot;W191&quot;) в список игнора</li>
+<li>...</li>
+<li>PROFIT!</li>
+</ul>
+<p>После чего &quot;умных&quot; ошибок не будет появлятся.</p>
+
+<div class="author">
+  <a href="">
+    <img src="http://liubavyshka.ru/_ph/36/2/813597786.gif" alt="Parasite" width="128" height="108"/>
+  </a>
+  <div class="infos">
+    <h3>A propos de <a href="">Parasite</a></h3>	
+    <p></p>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class=footer>
+          <div class="textwidget">
+
+
+
+
+
+
+
+
+          </div>
+
+          <p>
+            Carburize with <a href="http://blog.getpelican.com">pelican</a></p>
+          <p><a href="https://github.com/badele/pelican-theme-jesuislibre">jesuislibre</a> theme, inspired by <a href="http://blog.dbrgn.ch">dbrng</a> blog</p>
+          <p><a href="http://bruno.adele.im">about author</a></p>
+      </div>
+
+
+     </body>
+</html>

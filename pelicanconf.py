@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Parasite'
 SITENAME = u"Parasite's Thoughts"
-SITEURL = '/output'
-#SITEURL = ''
+SITEURL = '/output' #for git release
+#SITEURL = ''	#localhost
 
 TIMEZONE = 'Europe/Moscow'
 
