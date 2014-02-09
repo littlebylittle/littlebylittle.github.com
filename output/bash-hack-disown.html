@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Bash hack disown</title>
+
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Parasite" />
+
+        <!-- Feeds -->
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="/theme/favicon.ico" />
+
+        <!-- Google analytics -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+          <div id="blogtitle">Parasite's Thoughts</div>
+
+          <!-- Blogroll -->
+          <ul id="mainnav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+
+          <div class="clearboth"></div>
+          <div id="content">
+
+<h1>Bash hack disown</h1>
+<div class=date>Вс. 09 Февраль 2014
+ / <span class="tags">
+  <a class="tag" href="/tag/bash.html">bash</a>
+  <a class="tag" href="/tag/disown.html">disown</a>
+</span>
+</div>
+
+<p>Недавно обнаружил небольшой лайф-хак в баше: можно запустить программу в консоли. После чего отвязать её от активного терминала,
+что-бы она работала в фоновом режиме. Делается это так:</p>
+<ul class="simple">
+<li>Запускаем программу, например <cite>man man</cite></li>
+<li>Отправляем ей сигнал на остановку <cite>kill -sSTOP</cite> или просто нажав <cite>ctrl+z</cite></li>
+<li>Увидим надпись <cite>[1]  + 12879 suspended  man man</cite></li>
+<li>Теперь что-бы кинуть задачу в фоновой режим пишем <cite>bg</cite></li>
+<li>Список фоновыхприостановленных процессов можно посомтреть через <cite>jobs</cite></li>
+<li>И теперь ход конем, <cite>disown</cite>, теперь когда процессу НЕ отправится <cite>SIGHUP</cite> при закрытии родительского терминила, и программа будет продолжать работать.</li>
+<li>Закрываем консоль, пишем <cite>exit</cite></li>
+</ul>
+<div class="section" id="id1">
+<h2>Из минусов:</h2>
+<p>Подключится обратно к фоновой задаче нельзя. Она будет работать, пока не закончит по какой-либо причине, либо я её сам не убью через <cite>kill</cite>;</p>
+<p>Также вижу комментарии на стековерфлоу что <cite>disown</cite> это чисто bash-builtin функция, и её нету в составе других шеллов. И как вариант предлагают использовать <cite>nohup -p pid</cite>.</p>
+<p>:wq</p>
+</div>
+
+<div class="author">
+  <a href="">
+    <img src="http://liubavyshka.ru/_ph/36/2/813597786.gif" alt="Parasite" width="128" height="108"/>
+  </a>
+  <div class="infos">
+    <h3>A propos de <a href="">Parasite</a></h3>	
+    <p></p>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class=footer>
+          <div class="textwidget">
+
+
+
+
+
+
+
+
+          </div>
+
+          <p>
+            Carburize with <a href="http://blog.getpelican.com">pelican</a></p>
+          <p><a href="https://github.com/badele/pelican-theme-jesuislibre">jesuislibre</a> theme, inspired by <a href="http://blog.dbrgn.ch">dbrng</a> blog</p>
+          <p><a href="http://bruno.adele.im">about author</a></p>
+      </div>
+
+
+     </body>
+</html>
