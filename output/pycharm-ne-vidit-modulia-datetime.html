@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Pycharm не видит модуля datetime</title>
+
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Parasite" />
+
+        <!-- Feeds -->
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="/theme/favicon.ico" />
+
+        <!-- Google analytics -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+          <div id="blogtitle">Parasite's Thoughts</div>
+
+          <!-- Blogroll -->
+          <ul id="mainnav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+
+          <div class="clearboth"></div>
+          <div id="content">
+
+<h1>Pycharm не видит модуля datetime</h1>
+<div class=date>Пт. 21 Февраль 2014
+ / <span class="tags">
+  <a class="tag" href="/tag/python2.html">python2</a>
+  <a class="tag" href="/tag/pycharm.html">pycharm</a>
+  <a class="tag" href="/tag/fails.html">fails</a>
+</span>
+</div>
+
+<p>В последнее время пока болею - решаю задачки по python, и почитываю доки по эрлангу.</p>
+<p>С задачками очень интересно выходит, искал я интересные задачи, и попадался только один тухляк, типо переверни список, либо олимпиады, с жесткими ограничениями по ресурсам, типо построй граф, с минимлаьными издержками.
+И большую часть времени надо потратить что-бы оптимизировать свой код сверх-меры.
+И в итоге ты большую часть времени тратишь на оптимизацию, что не интересно.
+А любая преждевременная оптимизация мне заведомо кажется не лучшей идеей, даже в олимпиадках.
+Особенно в олимпиадках для python'a, в которых я убиваю время и пишу понятный+короткий код.
+Это ведь не реальные проекты, надо будет - перепишу узкое место на какой-нибудь быстрой сишечке.</p>
+<p>Это меня удручало, пока я не нашел ресурс, похожий на codeschool/codeacademy, где задачи по python представлены в виде мини-игр (со своей сюжетной линией и историей), что мне очень понравилось. Сам сайт игры: checkio.org. Рекламирую его, он очень хорошь, денег не просит, грех не попиарить.</p>
+<p>Пока проходил задачки на <a class="reference external" href="http://checkio.org">http://checkio.org</a>, и заметил что для одной задачки, связанной с работой с временем, мой pycharm не видит модуль <cite>datetime</cite>; В то-же время консоль pycharm'a работала нормально, и модуль в ней импортировался корректно. Посмотрел <cite>datetime.__file__</cite> вижу что он указывает на <cite>datetime.x86_64-linux-gnu.so</cite>.
+Начал гуглить способы решения, и наткнулся на эту статью: <a class="reference external" href="http://m05quit0.ru/tag/pycharm/">статья маскита</a>, где ситуация похоже на мою.</p>
+<p>Выполнил шаги, описанные в статье, но это не помогло. Ну и начал я лазить по настройкам <cite>pycharm</cite>, и нашел в нем свой менеджер пакетов для питона. Он находится в разделе:</p>
+<p><cite>Settings-&gt; Project Interpeters -&gt; Your python version -&gt; Вкладка (Packages)</cite></p>
+<p>Там я нажал на <cite>Install</cite> и установил заново пакет <cite>datetime</cite></p>
+<p>После чего все работает. Выгода.</p>
+
+<div class="author">
+  <a href="">
+    <img src="http://liubavyshka.ru/_ph/36/2/813597786.gif" alt="Parasite" width="128" height="108"/>
+  </a>
+  <div class="infos">
+    <h3>A propos de <a href="">Parasite</a></h3>	
+    <p></p>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class=footer>
+          <div class="textwidget">
+
+
+
+
+
+
+
+
+          </div>
+
+          <p>
+            Carburize with <a href="http://blog.getpelican.com">pelican</a></p>
+          <p><a href="https://github.com/badele/pelican-theme-jesuislibre">jesuislibre</a> theme, inspired by <a href="http://blog.dbrgn.ch">dbrng</a> blog</p>
+          <p><a href="http://bruno.adele.im">about author</a></p>
+      </div>
+
+
+     </body>
+</html>
