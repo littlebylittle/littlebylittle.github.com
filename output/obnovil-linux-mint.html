@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Обновил linux mint</title>
+
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Parasite" />
+
+        <!-- Feeds -->
+
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/output/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="/output/theme/favicon.ico" />
+
+        <!-- Google analytics -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+          <div id="blogtitle">Parasite's Thoughts</div>
+
+          <!-- Blogroll -->
+          <ul id="mainnav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+
+          <div class="clearboth"></div>
+          <div id="content">
+
+<h1>Обновил linux mint</h1>
+<div class=date>Сб. 08 Март 2014
+ / <span class="tags">
+  <a class="tag" href="/output/tag/linux.html">linux</a>
+  <a class="tag" href="/output/tag/minx.html">minx</a>
+  <a class="tag" href="/output/tag/life.html">life</a>
+  <a class="tag" href="/output/tag/xfce.html">xfce</a>
+</span>
+</div>
+
+<div class="section" id="linux-mint-linux-mint-16">
+<h2>Обновил свой linux mint до linux mint 16</h2>
+<p>Делается это все очень просто:
+* sudo apt-get update
+* sudo apt-get upgrade
+* Заменя в файлах /etc/apt/sources.list и vim /etc/apt/sources.list.d вхождений названия старого дистрибутива на новый
+* sudo apt-get dist-upgrade
+* И снова apt-get udpate &amp;&amp; apt-get upgrade
+* ...
+* Выгода.</p>
+<p>Единственное что - у меня пакетный менеджер почему-то решил что &quot;некоторые&quot; пакеты <em>mate</em> мне больше не нужны, и пометил их как неиспользуемые. В результате я их решил не использоватЬ, и удалил через apt-get autoremove;</p>
+<blockquote>
+<p>В результате после загрузки у меня не запустился mdm;</p>
+<p>Помогло:</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/igorm/Docs/littlebylittle.github.com/content/articles/linux-mint-16.update.rst</tt>, line 25)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<ul class="simple">
+<li>переключится на консольную сессию.</li>
+<li>Написать там startx</li>
+<li>Войти в настройки mdm и увидеть что нет logon тем из mint-15;</li>
+<li>Указать стандартный logon theme для mdm;</li>
+<li>И также перезапустив <cite>service mdm restart</cite> увидеть что mdm logon screen работает.</li>
+<li>В итоге: выставил что теперь мой window manager это xfce;</li>
+</ul>
+<p>XFCE оказался не так уж плох, поэтому под ним и сижу. Такие дела.
+:wq</p>
+</div>
+
+<div class="author">
+  <a href="">
+    <img src="http://liubavyshka.ru/_ph/36/2/813597786.gif" alt="Parasite" width="128" height="108"/>
+  </a>
+  <div class="infos">
+    <h3>A propos de <a href="">Parasite</a></h3>	
+    <p></p>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class=footer>
+          <div class="textwidget">
+
+
+
+
+
+
+
+
+          </div>
+
+          <p>
+            Carburize with <a href="http://blog.getpelican.com">pelican</a></p>
+          <p><a href="https://github.com/badele/pelican-theme-jesuislibre">jesuislibre</a> theme, inspired by <a href="http://blog.dbrgn.ch">dbrng</a> blog</p>
+          <p><a href="http://bruno.adele.im">about author</a></p>
+      </div>
+
+
+     </body>
+</html>
