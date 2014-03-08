@@ -8,6 +8,8 @@
 ****************************************
 
 Делается это все очень просто:
+
+
 * sudo apt-get update
 * sudo apt-get upgrade
 * Заменя в файлах /etc/apt/sources.list и vim /etc/apt/sources.list.d вхождений названия старого дистрибутива на новый
