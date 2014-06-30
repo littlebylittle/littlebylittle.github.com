@@ -2,23 +2,41 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-# This file is only used if you use `make publish` or
-# explicitly specify it as your config file.
+AUTHOR = u'Parasite'
+SITENAME = u"Parasite's Thoughts"
+SITEURL = '/output' #for git release
+#SITEURL = ''	#localhost
 
-import os
-import sys
-sys.path.append(os.curdir)
-from pelicanconf import *
+TIMEZONE = 'Europe/Moscow'
 
-SITEURL = ''
-RELATIVE_URLS = False
+DEFAULT_LANG = u'ru'
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
 
-DELETE_OUTPUT_DIRECTORY = True
+# Blogroll
+LINKS =  (('Home', '/'),
+          ('Pelican', 'http://getpelican.com/'),
+          ('Python.org', 'http://python.org/'),
+          ('Jinja2', 'http://jinja.pocoo.org/'),
+	  )
 
-# Following items are often useful when publishing
+#IMG author
+AUTHOR_IMG = '/static/cham.png'
+# Social widget
+SOCIAL = (('My github', 'https://github.com/littlebylittle/#'), )
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+DEFAULT_PAGINATION = 10
+
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
+
+#Enable get date from file:
+DEFAULT_DATE = 'fs'
+
+#using theme for blog
+THEME = 'pelican-themes/jesuislibre'
+
+STATIC_PATHS = ['static/cham.png']

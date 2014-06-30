@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Parasite'
 SITENAME = u"Parasite's Thoughts"
-SITEURL = '/output' #for git release
-#SITEURL = ''	#localhost
+#SITEURL = '/output' #for git release
+SITEURL = ''	#localhost
 
 TIMEZONE = 'Europe/Moscow'
 
@@ -17,13 +17,14 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
+LINKS =  (('Home', '/'),
+          ('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
-	  ('Home', '/'), )
+	  )
 
 #IMG author
-AUTHOR_IMG = 'http://liubavyshka.ru/_ph/36/2/813597786.gif'
+AUTHOR_IMG = '/static/cham.png'
 # Social widget
 SOCIAL = (('My github', 'https://github.com/littlebylittle/#'), )
 
@@ -38,3 +39,4 @@ DEFAULT_DATE = 'fs'
 #using theme for blog
 THEME = 'pelican-themes/jesuislibre'
 
+STATIC_PATHS = ['static/cham.png']

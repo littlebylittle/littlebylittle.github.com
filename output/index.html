@@ -24,10 +24,10 @@
 
           <!-- Blogroll -->
           <ul id="mainnav">
+            <li><a href="/">Home</a></li>
             <li><a href="http://getpelican.com/">Pelican</a></li>
             <li><a href="http://python.org/">Python.org</a></li>
             <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-            <li><a href="/">Home</a></li>
           </ul>
 
           <div class="clearboth"></div>
@@ -37,20 +37,53 @@
 
   <div class="row">
     <div class=article-overview>
-      <div class=date>Сб. 08 Март 2014</div>
+      <div class=date>Пн. 30 Июнь 2014</div>
+      <div class=detail>
+        <h1><a href="/output/podzabil-na-blog-nado-prodolzhat-igra-pro-geometriiu.html" title="Permalink to Подзабил на блог, надо продолжать + игра про геометрию">Подзабил на блог, надо продолжать + игра про геометрию</a></h1>
+        <div class=summary><p>Подзабил на заметки в блоге, чуствую что некоторые вещи забываю. На работе
+все время была завал, но сейчас ушел в отпуск, и выкроил время. Надо
+продолжать писать it-шные статьи, что-бы не терять навыки. Ну или уходить
+от it-тематики, и использовать как личный блог.</p>
+<p>Ну что нового я узнал? Начала читать ...</p></div>
+      </div>
+
+      <!-- tags list -->
+	  <div class="tags">
+        <a class="tag" href="/output/tag/lichnoe.html">личное</a>
+        <a class="tag" href="/output/tag/razvitie.html">развитие</a>
+      </div>
+    </div>
+    <div class=article-overview>
+      <div class=date>Пн. 30 Июнь 2014</div>
+      <div class=detail>
+        <h1><a href="/output/chem-otkryt-ssylku-http-ili-mailto.html" title="Permalink to Чем открыть ссылку http:// или mailto:">Чем открыть ссылку <a class="reference external" href="http://">http://</a> или mailto:</a></h1>
+        <div class=summary><p>Нашел интересную программу для открытия <cite>http://</cite> ссылок в консоли. Называется &quot;xdg-open&quot;</p>
+<p>Пишешь <cite>xdg-open &lt;http://goo.gl&gt;</cite>, и твой браузер по-умолчанию открывает &quot;goo.gl&quot;.</p>
+<p>Забавная вещь.</p>
+</div>
+      </div>
+
+      <!-- tags list -->
+	  <div class="tags">
+        <a class="tag" href="/output/tag/bash.html">bash</a>
+        <a class="tag" href="/output/tag/trick.html">trick</a>
+      </div>
+    </div>
+    <div class=article-overview>
+      <div class=date>Ср. 30 Апрель 2014</div>
       <div class=detail>
         <h1><a href="/output/obnovil-linux-mint.html" title="Permalink to Обновил linux mint">Обновил linux mint</a></h1>
-        <div class=summary><div class="section" id="linux-mint-linux-mint-16">
-<h2>Обновил свой linux mint до linux mint 16</h2>
-<p>Делается это все очень просто:
-* sudo apt-get update
-* sudo apt-get upgrade
-* Заменя в файлах /etc/apt/sources.list и vim /etc/apt/sources.list.d вхождений названия старого дистрибутива на новый
-* sudo apt-get dist-upgrade
-* И снова apt-get udpate &amp;&amp; apt-get upgrade
-* ...
-* Выгода.</p>
-<p>Единственное ...</p></div></div>
+        <div class=summary><p>Делается это все очень просто:</p>
+<ul class="simple">
+<li>sudo apt-get update</li>
+<li>sudo apt-get upgrade</li>
+<li>Заменя в файлах /etc/apt/sources.list и vim /etc/apt/sources.list.d вхождений названия старого дистрибутива на новый</li>
+<li>sudo apt-get dist-upgrade</li>
+<li>И снова apt-get udpate &amp;&amp; apt-get upgrade</li>
+<li>...</li>
+<li>Выгода.</li>
+</ul>
+<p>Единственное что - у меня пакетный менеджер почему-то решил что ...</p></div>
       </div>
 
       <!-- tags list -->
@@ -62,18 +95,21 @@
       </div>
     </div>
     <div class=article-overview>
-      <div class=date>Сб. 08 Март 2014</div>
+      <div class=date>Ср. 30 Апрель 2014</div>
       <div class=detail>
-        <h1><a href="/output/chem-otkryt-ssylku-http-ili-mailto.html" title="Permalink to Чем открыть ссылку http:// или mailto:">Чем открыть ссылку <a class="reference external" href="http://">http://</a> или mailto:</a></h1>
-        <div class=summary><p>Нашел интересную программу для открытия <cite>http://</cite> ссылок в консоли. Называется <cite>xdg-open http://goo.gl</cite>.</p>
-<p>Забавная вещь.</p>
-</div>
+        <h1><a href="/output/bash-hack-disown.html" title="Permalink to Bash hack disown">Bash hack disown</a></h1>
+        <div class=summary><p>Недавно обнаружил небольшой лайф-хак в баше: можно запустить программу в консоли. После чего отвязать её от активного терминала,
+что-бы она работала в фоновом режиме. Делается это так:</p>
+<ul class="simple">
+<li>Запускаем программу, например <cite>man man</cite></li>
+<li>Отправляем ей сигнал на остановку <cite>kill -sSTOP</cite> или просто нажав <cite>ctrl+z</cite></li>
+<li>Увидим надпись <cite>[1]  + 12879 suspended  man ...</cite></li></ul></div>
       </div>
 
       <!-- tags list -->
 	  <div class="tags">
         <a class="tag" href="/output/tag/bash.html">bash</a>
-        <a class="tag" href="/output/tag/trick.html">trick</a>
+        <a class="tag" href="/output/tag/disown.html">disown</a>
       </div>
     </div>
     <div class=article-overview>
@@ -110,24 +146,6 @@
         <a class="tag" href="/output/tag/python2.html">python2</a>
         <a class="tag" href="/output/tag/pycharm.html">pycharm</a>
         <a class="tag" href="/output/tag/fails.html">fails</a>
-      </div>
-    </div>
-    <div class=article-overview>
-      <div class=date>Вс. 09 Февраль 2014</div>
-      <div class=detail>
-        <h1><a href="/output/bash-hack-disown.html" title="Permalink to Bash hack disown">Bash hack disown</a></h1>
-        <div class=summary><p>Недавно обнаружил небольшой лайф-хак в баше: можно запустить программу в консоли. После чего отвязать её от активного терминала,
-что-бы она работала в фоновом режиме. Делается это так:</p>
-<ul class="simple">
-<li>Запускаем программу, например <cite>man man</cite></li>
-<li>Отправляем ей сигнал на остановку <cite>kill -sSTOP</cite> или просто нажав <cite>ctrl+z</cite></li>
-<li>Увидим надпись <cite>[1]  + 12879 suspended  man ...</cite></li></ul></div>
-      </div>
-
-      <!-- tags list -->
-	  <div class="tags">
-        <a class="tag" href="/output/tag/bash.html">bash</a>
-        <a class="tag" href="/output/tag/disown.html">disown</a>
       </div>
     </div>
     <div class=article-overview>
