@@ -24,7 +24,7 @@ LINKS =  (('Home', '/'),
 	  )
 
 #IMG author
-AUTHOR_IMG = '/static/cham.png'
+AUTHOR_IMG = SITEURL + '/static/cham.png'
 # Social widget
 SOCIAL = (('My github', 'https://github.com/littlebylittle/#'), )
 
@@ -39,4 +39,4 @@ DEFAULT_DATE = 'fs'
 #using theme for blog
 THEME = 'pelican-themes/jesuislibre'
 
-STATIC_PATHS = ['static/cham.png']
+STATIC_PATHS = ['static/']
